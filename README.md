@@ -596,14 +596,3 @@ Incorrect hardening may:
 - Cause system instability
 
 ---
-
-# 📜 License
-
-MIT License
-
----
-
-# 👨‍💻 Author
-
-Linux Security Automation Framework  
-Built for Enterprise DevSecOps & Production Security Operations
