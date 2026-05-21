@@ -1,0 +1,7 @@
+{
+  "server": "web-server-01",
+  "ssh_root_login": "disabled",
+  "firewall_status": "enabled",
+  "auditd_status": "running",
+  "compliance_score": "92%"
+}
