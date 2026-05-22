@@ -185,7 +185,7 @@ Security hardening policies are executed sequentially on each server.
 
 ---
 
-# 1️⃣ `harden.py`
+## 1️⃣ `harden.py`
 
 ## Purpose
 
@@ -206,7 +206,7 @@ Acts as the centralized automation controller.
 
 ---
 
-# 2️⃣ `inventory/`
+## 2️⃣ `inventory/`
 
 ## Purpose
 
@@ -221,7 +221,7 @@ Stores all target server definitions.
 
 ---
 
-# 3️⃣ `policies/`
+## 3️⃣ `policies/`
 
 ## Purpose
 
@@ -235,7 +235,7 @@ enable_firewall: true
 install_fail2ban: true
 ```
 
-## Production Importance
+### Production Importance
 
 - Policy-as-Code
 - Compliance standardization
@@ -244,13 +244,13 @@ install_fail2ban: true
 
 ---
 
-# 4️⃣ `modules/`
+## 4️⃣ `modules/`
 
 Contains reusable hardening components.
 
 ---
 
-## 🔐 `ssh_hardening.py`
+### 🔐 `ssh_hardening.py`
 
 ### Responsibilities
 
@@ -265,7 +265,7 @@ Reduces SSH attack vectors.
 
 ---
 
-## 🔥 `firewall.py`
+### 🔥 `firewall.py`
 
 ### Responsibilities
 
@@ -346,19 +346,19 @@ Reduces known CVEs exposure.
 
 ---
 
-# 5️⃣ `logs/`
+## 5️⃣ `logs/`
 
-## Purpose
+### Purpose
 
 Stores execution and security logs.
 
-## Example
+### Example
 
 ```text
 logs/hardening.log
 ```
 
-## Production Importance
+### Production Importance
 
 - Troubleshooting
 - Audit evidence
@@ -367,13 +367,13 @@ logs/hardening.log
 
 ---
 
-# 6️⃣ `backups/`
+## 6️⃣ `backups/`
 
-## Purpose
+### Purpose
 
 Stores backup copies before configuration changes.
 
-## Production Importance
+### Production Importance
 
 - Rollback support
 - Disaster recovery
@@ -381,19 +381,19 @@ Stores backup copies before configuration changes.
 
 ---
 
-# 7️⃣ `reports/`
+## 7️⃣ `reports/`
 
-## Purpose
+### Purpose
 
 Stores generated compliance reports.
 
-## Example Outputs
+### Example Outputs
 
 - JSON reports
 - CSV compliance status
 - HTML dashboards
 
-## Production Importance
+### Production Importance
 
 - Audit readiness
 - Security reviews
@@ -401,7 +401,7 @@ Stores generated compliance reports.
 
 ---
 
-# 🔒 Security Controls Implemented
+### 🔒 Security Controls Implemented
 
 | Category | Controls |
 |---|---|
@@ -417,11 +417,11 @@ Stores generated compliance reports.
 
 ---
 
-# 🏢 Production Considerations
+## 🏢 Production Considerations
 
 ---
 
-# ✅ Idempotency
+### ✅ Idempotency
 
 The framework should avoid duplicate changes.
 
@@ -431,7 +431,7 @@ Example:
 
 ---
 
-# ✅ Rollback Mechanism
+### ✅ Rollback Mechanism
 
 Before modifying critical files:
 
@@ -443,7 +443,7 @@ Prevents accidental production outages.
 
 ---
 
-# ✅ OS Detection
+### ✅ OS Detection
 
 Automatically detect:
 - Ubuntu
@@ -462,7 +462,7 @@ accordingly.
 
 ---
 
-# ✅ Compliance Alignment
+### ✅ Compliance Alignment
 
 Supports:
 - CIS Benchmarks
@@ -472,7 +472,7 @@ Supports:
 
 ---
 
-# ✅ Secrets Management
+### ✅ Secrets Management
 
 Never hardcode:
 - SSH keys
@@ -486,7 +486,7 @@ Recommended integrations:
 
 ---
 
-# ✅ Dry Run Support
+### ✅ Dry Run Support
 
 ```bash
 python harden.py --dry-run
@@ -496,7 +496,7 @@ Allows validation before production rollout.
 
 ---
 
-# ✅ Failure Isolation
+### ✅ Failure Isolation
 
 If one server fails:
 - Remaining servers continue execution
@@ -504,7 +504,7 @@ If one server fails:
 
 ---
 
-# ✅ Centralized Monitoring
+### ✅ Centralized Monitoring
 
 Recommended integrations:
 - Splunk
@@ -514,7 +514,7 @@ Recommended integrations:
 
 ---
 
-# 📊 Enterprise Deployment Flow
+### 📊 Enterprise Deployment Flow
 
 ```text
 Git Repository
@@ -534,7 +534,7 @@ Audit Reporting
 
 ---
 
-# ☁️ Cloud & DevSecOps Integration
+### ☁️ Cloud & DevSecOps Integration
 
 This framework can integrate with:
 
@@ -550,7 +550,7 @@ This framework can integrate with:
 
 ---
 
-# 🚀 Future Enhancements
+### 🚀 Future Enhancements
 
 - OpenSCAP Integration
 - CIS Compliance Scoring
@@ -564,7 +564,7 @@ This framework can integrate with:
 
 ---
 
-# ▶️ Execution
+## ▶️ Execution
 
 ## Install Dependencies
 
@@ -580,7 +580,7 @@ python harden.py
 
 ---
 
-# ⚠️ Important Warning
+### ⚠️ Important Warning
 
 Always test hardening changes in:
 - Development
