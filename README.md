@@ -91,7 +91,7 @@ linux-hardening-framework/
 
 ---
 
-### Step 1 — Inventory Loading
+#### Step 1 — Inventory Loading
 
 The framework dynamically loads all target Linux servers from the inventory file.
 
@@ -113,7 +113,7 @@ servers:
     key: /home/admin/.ssh/id_rsa
 ```
 
-## ✅ Production Benefit
+### ✅ Production Benefit
 
 - Centralized infrastructure management
 - Easy server onboarding
@@ -122,7 +122,7 @@ servers:
 
 ---
 
-# Step 2 — Secure SSH Authentication
+#### Step 2 — Secure SSH Authentication
 
 The framework securely connects to Linux servers using SSH private key authentication.
 
@@ -143,7 +143,7 @@ The framework securely connects to Linux servers using SSH private key authentic
 
 ---
 
-# Step 3 — Parallel Multi-Server Execution
+#### Step 3 — Parallel Multi-Server Execution
 
 The framework uses multithreading to harden multiple servers simultaneously.
 
@@ -153,7 +153,7 @@ The framework uses multithreading to harden multiple servers simultaneously.
 ThreadPoolExecutor(max_workers=5)
 ```
 
-## ✅ Production Benefit
+### ✅ Production Benefit
 
 - Faster enterprise deployment
 - Reduced maintenance window
@@ -162,7 +162,7 @@ ThreadPoolExecutor(max_workers=5)
 
 ---
 
-# Step 4 — Hardening Policy Execution
+#### Step 4 — Hardening Policy Execution
 
 Security hardening policies are executed sequentially on each server.
 
@@ -181,7 +181,7 @@ Security hardening policies are executed sequentially on each server.
 
 ---
 
-# 🧩 Production Modules Explained
+### 🧩 Production Modules Explained
 
 ---
 
